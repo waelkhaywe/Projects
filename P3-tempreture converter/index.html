@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Tempreture Conversion Website</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Tempreture Conversion</h1>
+        <form name="tempconv" method="POST" action="conv.php">
+          <table>
+            <tr>
+              <td><h3>Enter the value to convert</h3></td>
+              
+               <td> <input type="text" name="valueconv" id="valueconv" size="18" />
+              </td>
+            </tr>
+            <tr>
+              <td>Convert value to:</td>
+              <td>
+                <select name="typeconv" id="typeconv">
+                  <option value="celsius">Celsius</option>
+                  <option value="fahrenheit">Fahrenheit</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="submit"
+                  name="submit"
+                  id="convbtn"
+                  value="convert"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
+  </body>
+</html>

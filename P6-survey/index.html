@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" >
+        <h2 class="head">Please fill the below Survey</h2>
+        <input type="text" name="fname" id="fname" placeholder="First Name*" required>
+        <input type="text" name="lname" id="lname" placeholder="Last Name*" required>
+        <select name="job" id="job" required >
+          <option disabled selected hidden>Please select occupation*</option>
+          <option value="HR">Human Resourse</option>
+          <option value="Engineer">Engineer</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Nurse">Nurse</option>
+          <option value="Pharmacist">Pharmacist</option>
+        </select>
+        <div id="date">
+          <label for="Date">Date of Birth*</label>
+         <input type="date" value="date" required>
+        </div>
+        <label id="Gender" required>Gender:
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+        </label>
+        <select name="Country" id="Country" required>
+          <option disabled selected hidden>Please select Country*</option>
+          <option value="Lebanon">Lebanon</option>
+          <option value="Greece">Greece</option>
+          <option value="Uae">United Arab Emirates</option>
+          <option value="USA">United States</option>
+          <option value="Canada">Canada</option>
+        </select>
+        <input type="text" name="email" id="email" required placeholder="Email*">
+        <p id="fields">
+          * All fields are mandatory to fill
+        </p>
+        <button class="btn">Submit</button>
+
+
+        
+
+      </form>
+
+
+    </div>
+
+    </container>
+  </body>
+</html>
